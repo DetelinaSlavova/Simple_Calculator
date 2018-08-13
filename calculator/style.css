@@ -1,0 +1,118 @@
+html {
+    /* background: #1c142e; */
+    background: #ececec;
+    color: #6cacc5;
+   
+
+  }
+  
+  body {
+    color: #adcad8;
+    font: 300 18px/1.6 "Source Sans Pro",sans-serif;
+    margin: 0;
+    padding: 5em 0 2em;
+    text-align: center;
+  }
+  
+  .calculator {
+    border-radius: 5px;
+    border: 0.5px solid  #31262f80;
+    box-shadow:0 0 3px rgb(104, 52, 52), 0 0 5px rgb(14, 14, 56);
+    font-size: 1.2em;
+    padding: 10px 3px 10px 10px;
+    width: 10em;
+    display: inline-block;
+  
+  }
+  .viewer {
+    margin-right: 0.5em;
+    float: left;
+    text-align: right;
+    overflow: hidden;
+    width: 100%;
+    height: 2.5em;
+  }
+  
+  #mainDisplay {   
+    color: #31262b;
+    border: 0.5px solid  #27263180;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background:  #fff7fb;
+    margin: 0.20em;
+    padding: 0.20em;
+    float: left;
+    line-height: 3em;
+    text-align: right;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 92%;
+    height: 3.5em;
+  }
+
+  #display {
+    color: #27263180;
+    margin-right: 0.5em;
+    float: left;
+    text-align: right;
+    overflow: hidden;
+    width: 100%;
+    height: 1.2em;
+    font: 300 14px/1.6 "Source Sans Pro",sans-serif;
+  }
+  
+
+  .broken {
+    color: #8a1818;
+    font: 300 14px/1.6 "Source Sans Pro",sans-serif;
+
+  }
+
+  button {
+    border: 0;
+    background: #272631;
+    color: #b4c4ca;
+    cursor: pointer;
+    float: left;
+    font: inherit;
+    margin: 0.20em;
+    padding: 0.20em;
+    border-radius: 4px;
+    width: 2em;
+    height: 2em;
+   
+  }
+    button:hover {
+      background: #656380;
+    }
+    
+    #backOne {
+        width: 4.4em; 
+    }
+
+    .broken {
+        color:#b1133a;
+        font: 300 14px/1.6 "Source Sans Pro",sans-serif;
+
+    }
+  
+   @media (max-width: 420px) {
+    .calculator {
+      width: 8.5em;
+    }
+
+    #mainDisplay {
+    height: 3em;
+    }
+    
+    button {
+    width: 1.75em;
+    height: 1.75em;
+    margin: 0.15em;
+   
+    }
+
+    #backOne {
+        width: 3.80em; 
+    }
+}
