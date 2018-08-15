@@ -25,7 +25,6 @@ function initMap() {
         scaledSize: new google.maps.Size(45, 45)
     };
 
-
     //Load the map
     var geocoder = new google.maps.Geocoder();
     var defaultlatLng = new google.maps.LatLng(42.692151, 23.354187);
@@ -72,7 +71,6 @@ function initAutocomplete(map, icon, marker) {
     map.addListener('bounds_changed', function () {
         searchBox.setBounds(map.getBounds());
     });
-
 
     // Listen for the event fired when the user selects a prediction and retrieve
     // more details for that place.

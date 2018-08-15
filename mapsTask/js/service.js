@@ -32,8 +32,3 @@ var companyStorage = (function () {
     return new CompanyStorage();
 
 })();
-
-
-
-
-
