@@ -8,7 +8,7 @@ var companyStorage = (function () {
     };
 
     function CompanyStorage() {
-        if (localStorage.getItem("allCompanies") != null) {
+        if (localStorage.getItem("allCompanies") !== null) {
             this.companies = JSON.parse(localStorage.getItem("allCompanies"))
         } else {
             this.companies = [];
@@ -17,7 +17,7 @@ var companyStorage = (function () {
 
     CompanyStorage.prototype.addCompany = function (name, address, email, phone, web) {
         var isCompany = this.companies.find(function (company) {
-            return company.email == email
+            return company.email == email;
         });
 
         if (!isCompany) {

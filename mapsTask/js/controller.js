@@ -1,18 +1,16 @@
-
-$(document).ready(function () {
-    $("#name").focus();
+$(document).ready(function () {   
 
 //  Validation of input value 
     function isValidName(name) {
         var re = /^[a-zA-Z0-9\-_\s]+$/;
         return re.test(name)
-    }
+    };
 
     function isValidAddress(address) {
         if ($("#address").val().trim().length > 0) {
             return true;
         }
-    }
+    };
 
     function isValidEmail(email) {
         var re = /^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$/;
@@ -32,7 +30,7 @@ $(document).ready(function () {
 //Clear error when input is focused
     function clearError() {
         $(this).next("p").css("visibility", "hidden")
-    }
+    };
 
 //When: submit button is click
     function submitInformation() {
