@@ -1,0 +1,98 @@
+#map {
+    box-sizing: border-box;
+    width: 70%;
+    height: 80%;
+    float: right;
+    padding: 25px;
+}
+
+html,
+body {
+    height: 100%; 
+}
+
+#mainContainer {
+    box-sizing: border-box;
+    border-radius: 15px; 
+    background-color: rgb(255, 255, 255);
+    float: left;
+    width: 30%;
+    padding: 25px; 
+    
+}
+
+input:first-child {
+    padding-top: 20px;
+}
+
+input:last-child {
+    margin-bottom: 50px;
+}
+
+input {
+    display: block;
+    position: inherit;
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 350px;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    height: 20px;
+    border-style: none;
+    outline-style: none;
+    border-bottom: 1px solid lightseagreen;
+}
+
+#description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+}
+
+.pac-controls label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#target {
+    width: 345px;
+}
+.error {
+    position: inherit;
+    margin: 0 auto;
+    width: 350px;
+    color: rgb(235, 85, 85);
+    visibility: hidden;
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+   
+}
+
+.btn {
+    border-radius: 7px;
+    background-color:lightseagreen;
+    position: relative;
+    width: 121px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color:lightseagreen;
+  }
+
+  

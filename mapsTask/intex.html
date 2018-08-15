@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/service.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/mapController.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1c7it0Rgxveriq-N3chA4XHXQbdoHDA0&libraries=places&callback&callback=initMap"
+        async defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="mainContainer">
+        <input type="text" placeholder="Company name" id="name" autofocus>
+        <p class="error" id="nameError">The name you've entered contains unauthorized characters</p>
+
+        <input id="address" type="text" placeholder="Enter your address" autocomplete="off">
+        <p class="error" id="addressError">The empty field</p>
+        <p class="error" id="geocoderError">Request denied</p>
+
+        <input type="email" placeholder="e-mail" id="email">
+        <p class="error" id="emailError">The e-mail you've entry is not correct format</p>
+
+        <input type="text" placeholder="phone" id="phone">
+        <p class="error" id="phoneError">The phone you've entered is not correct </p>
+
+        <input type="url" name="url" placeholder="web address" id="url">
+        <p class="error" id="urlError">The web address you've entered is not correct format</p>
+
+        <div class="btn" type="submit" value="Submit" id="submit">Submit</div>
+    </div>
+
+    <div id="map"></div>
+
+</body>
+
+</html>
